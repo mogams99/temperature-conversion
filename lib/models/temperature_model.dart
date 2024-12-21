@@ -9,5 +9,5 @@ class TemperatureModel {
 
   num toKelvinFromCelcius() => toCelcius() + 273.15;
 
-  num toCelciusFromKelvin() => value - 273.15;
+  num toCelciusFromKelvin() => value == 0 ? 273.15 : value - 273.15;
 }
